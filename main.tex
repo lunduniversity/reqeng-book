@@ -1,31 +1,44 @@
-\documentclass{article}
+\documentclass[a4paper]{nicebook}
 \usepackage[utf8]{inputenc}
 
-\title{reqeng-book}
-\author{Bjorn Regnell}
-\date{January 2019}
+\title{
+\bf\sffamily\fontsize{30}{40}\selectfont
+Introduction to Software Requirements Engineering
+}
 
-\usepackage{natbib}
-\usepackage{graphicx}
+\author{Björn Regnell}
+
+\date{\today}
 
 \begin{document}
 
+\pagenumbering{roman}
+\frontmatter
 \maketitle
 
-\section{Introduction}
-There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.
-There is another theory which states that this has already happened. \cite{lauesen2001software}
+\input{chapters/0-preface}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=1.7]{universe}
-\caption{The Universe}
-\label{fig:universe}
-\end{figure}
+\setcounter{tocdepth}{2}
+\tableofcontents
+\mainmatter
+\pagenumbering{arabic}
 
-\section{Conclusion}
-``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
+\input{chapters/1-context}
+\input{chapters/2-elicitation}
+\input{chapters/3-prioritization}
+\input{chapters/4-functionality}
+\input{chapters/5-quality}
+\input{chapters/6-management}
+\input{chapters/7-validation}
 
-\bibliographystyle{plain}
+\chapter{Conclusion}
+``I always thought something was fundamentally wrong with the universe'' \cite{adams1995hitchhiker}
+
+
+\input{chapters/8-appendices}
+
+
+
+\bibliographystyle{alpha}%{plain}
 \bibliography{references}
 \end{document}

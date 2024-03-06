@@ -1,3 +1,3 @@
-This repo is not evolving but kept for reference. 
+This repo is deprecated and thus not evolving but kept for reference. 
 
-The work will (eventually) continue at https://github.com/bjornregnell/reqeng-book
+The work continue at https://github.com/bjornregnell/reqeng-book
